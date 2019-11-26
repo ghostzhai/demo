@@ -24,6 +24,14 @@ npm run test
 ```
 npm run lint
 ```
+### 弹出框使用方法
+ //  name, 参数 ， 回调callback（）
+ this.$open('textModal',{
+        p1:'消息1',
+        p2:'消息2'
+      },function () {
+
+      })
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

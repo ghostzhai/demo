@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="openModal">Modal测试</button>
     <button @click="color='red'">红色</button>
     <button @click="color='blue'">蓝色</button>
     <button @click="color='orange'">橘黄色</button>
@@ -15,6 +16,16 @@ export default {
   name: "app",
   components: {
     HelloWorld
+  },
+  methods:{
+    openModal(){
+      this.$open('textModal',{
+        p1:'消息1',
+        p2:'消息2'
+      },function () {
+        
+      })
+    }
   },
   setup() {
     const color = ref("yellow");

@@ -1,4 +1,4 @@
-<template>
+npm run serve<template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -6,6 +6,7 @@
     <button @click="color='red'">红色</button>
     <button @click="color='blue'">蓝色</button>
     <button @click="color='orange'">橘黄色</button>
+    我是xxxx
   </div>
 </template>
 
